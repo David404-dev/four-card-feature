@@ -1,0 +1,169 @@
+/* DESKTOP */
+
+:root {
+  /* Primary */
+  --red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Secondary */
+  --veryDarkBlue: hsl(234, 12%, 34%);
+  --grayishBlue: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.reliable {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+.powered {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.title-section p {
+  width: 50%;
+  margin: 0 auto 5em auto;
+  font-weight: 200;
+}
+
+.tools-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.desktop-mode {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.supervisor {
+  position: relative;
+  top: 150px;
+  left: 130px;
+  border-top: 5px solid var(--Cyan);
+}
+
+.team-builder {
+  border-top: 5px solid var(--red);
+}
+
+.karma {
+  margin-top: 2em;
+  border-top: 5px solid var(--Orange);
+}
+
+.calculator {
+  position: relative;
+  top: 150px;
+  right: 130px;
+  border-top: 5px solid var(--Blue);
+}
+
+.tool {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tool h2,
+p {
+  margin-left: 1.2em;
+}
+
+.tool h2 {
+  margin-left: 0.9em;
+  font-weight: 600;
+  color: black;
+  opacity: 0.6;
+}
+
+.tool p {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+.tool img {
+  position: relative;
+  left: 300px;
+  top: 70px;
+}
+
+footer {
+  margin-top: 5em;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 1850px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10em;
+  }
+
+  .tools-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: -9em;
+  }
+
+  .tool {
+    margin: 1em auto;
+  }
+
+  .supervisor {
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+
+  .team-builder {
+    position: relative;
+    top: 100px;
+  }
+
+  .karma {
+    position: relative;
+    top: 100px;
+  }
+
+  .calculator {
+    position: relative;
+    top: 100px;
+    left: 0;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}
